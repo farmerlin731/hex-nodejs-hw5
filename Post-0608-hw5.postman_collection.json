@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "14d883ae-5a90-42e0-bed2-4b5bd5ee211d",
+		"name": "Post-0608-hw5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20778936"
+	},
+	"item": [
+		{
+			"name": "取得列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://stark-river-68027.herokuapp.com/api/posts?timeSort=asc",
+					"protocol": "https",
+					"host": [
+						"stark-river-68027",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "timeSort",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增文章",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":\"629c7bf64350f4acc49a9f85\",\n    \"content\":\"Hello World _06666_0608~ :)\",\n    \"tags\":[\"天氣\"],\n    \"type\":\"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stark-river-68027.herokuapp.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"stark-river-68027",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
